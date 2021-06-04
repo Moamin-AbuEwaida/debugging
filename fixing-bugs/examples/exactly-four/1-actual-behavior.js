@@ -1,5 +1,14 @@
 'use strict';
 
+/* actual behavior
+
+  before looking too closely at the code, take some time to understand what it DOES do
+
+  a good way to explain what the code DOES do is to see which test cases fail
+  so run the program a few times trying out each test case
+
+*/
+
 /* exactly 4
 
   a user can enter a number and know if it is 4 characters long
@@ -14,15 +23,18 @@
     'ab' -> 'too short'
     'abc' -> 'too short'
     'abcd' -> 'perfect!'
-          -> 'too short'
     'abcde' -> 'too long'
     'abcdef' -> 'too long'
 
-  surprising lines:
+  --- experiments ---
 
-  the bug:
+  1. FAILING: 'abcd' -> 'too short'. it should output 'perfect!'
+    TRY:
+    PREDICT:
+    IT DID:
+    EXPLAIN:
 
-  your fix:
+  --- lessons learned ---
 
 */
 
@@ -42,12 +54,3 @@ if (input === null) {
 }
 
 alert(message);
-
-/* experiments
-
-  name
-    predict:
-    actual:
-    why:
-
-*/
