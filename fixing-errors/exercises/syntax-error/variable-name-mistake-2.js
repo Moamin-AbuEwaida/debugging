@@ -1,7 +1,7 @@
 'use strict';
 
 /*
-  environment:
+  environment:Firefox
 
   name:
   message:
@@ -10,9 +10,9 @@
 
   life cycle:
 
-  the mistake:
+  the mistake: using a reserved object for JS as a variable name "undefined"
 
-  the fix(es):
+  the fix(es): using any other non reserved object
 */
 
-const undefined = 'three';
+const x = 'three';

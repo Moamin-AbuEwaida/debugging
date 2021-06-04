@@ -1,20 +1,27 @@
 'use strict';
 
 /*
-  environment:
+  environment: firefox
 
-  name:
-  message:
+  name: ReferenceError
+  message: can't access lexical declaration 'tomatoes' before initialization
 
-  callstack:
+  callstack: 
+    <anonymous> about:blank line 56 > injectedScript line 2 > eval:18
+    <anonymous> about:blank line 56 > injectedScript:2
+    onload http://localhost:4002/own_static_resources_lenses/study/static/types/javascript/static/study-with.js:56
+    studyWithEval http://localhost:4002/own_static_resources_lenses/study/static/types/javascript/static/study-with.js:33
+    studyWith http://localhost:4002/own_static_resources_lenses/study/static/types/javascript/javascript-class.js:462
+    initJsUi http://localhost:4002/own_static_resources_lenses/study/static/types/javascript/javascript-class.js:289
 
-  life cycle:
+  life cycle: creaation stage/phase
 
   the mistake:
 
   the fix(es):
 */
 
-console.log(tomatoes);
+
 
 let tomatoes = 'fresh';
+console.log(tomatoes);
