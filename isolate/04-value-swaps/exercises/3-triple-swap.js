@@ -8,6 +8,14 @@ let temp;
 
 // write some code, be sure to use temp!
 
+temp = a; //temp = 'y'
+a = c; // a = x
+c = b; // c = z
+b = temp; // b = y
+temp = 12;
+
+
+
 // fill in the _ to pass the assertions
 
 const isTrue1 = a === 'x';

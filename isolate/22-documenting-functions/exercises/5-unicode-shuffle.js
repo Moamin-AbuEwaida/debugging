@@ -2,8 +2,12 @@
 console.log('-- begin --');
 
 /**
- *
+ * this program transforms the characters of a string 
+ * @param {String} text, the original text
+ * @param {Number} shift, the number added to the code of the original characters unicode
+ * return {String} encodedString , the new text 
  */
+
 const unicodeShuffle = (text = '', shift = 0) => {
   let encodedString = '';
 

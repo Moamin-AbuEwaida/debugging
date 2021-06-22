@@ -2,8 +2,14 @@
 console.log('-- begin --');
 
 /**
- *
+ *The program is counting the characters of a string
+ * @param {String} text, The word we need to count certain character of  
+ * @param {String} toCount, the character we want to count
+ * @retun {Number} -1, indecates that toCount is an empty string
+ * @return {Number} count, the final result counted character  
  */
+
+
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
     return -1;
@@ -17,6 +23,7 @@ const countCharacter = (text = '', toCount = '') => {
   }
   return count;
 };
+ 
 
 const _1_expect = 1;
 const _1_actual = countCharacter('aA', 'a');

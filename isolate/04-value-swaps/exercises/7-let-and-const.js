@@ -10,11 +10,15 @@ let b = 'z';
 let c = 'x';
 let temp;
 
-temp = a;
-a = b;
-const d = a;
+temp = a; // temp = y
+a = b; // a = z
+const d = a; // d = z
 
 // write some code, be sure to use temp!
+
+a = c; // a = x
+b = temp; // b= y
+c = d; // c = z
 
 // fill in in the _'s to pass the final assertions
 
@@ -27,10 +31,10 @@ console.assert(isTrue2, 'Test 2');
 const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = d === _;
+const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 'y';
 console.assert(isTrue5, 'Test 5');
 
 

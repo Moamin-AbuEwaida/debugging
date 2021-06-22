@@ -2,12 +2,12 @@
 
 let userInput = '';
 let repetitions = NaN;
-while (_) {
+while (true) {
   /* gather a string from the user */
   userInput = prompt('enter a phrase to repeat:');
 
   /* make sure the user input something */
-  if (_) {
+  if (userInput === null || userInput === '') {
     alert('nope, enter something');
     continue;
   }
@@ -19,7 +19,7 @@ while (_) {
   repetitions = Number(repetitionsInput);
 
   /* make sure the user input a valid number */
-  if (_) {
+  if (repetitionsInput != repetitions) {
     alert('"' + repetitionsInput + '" is not a number');
     continue;
   }
@@ -36,9 +36,11 @@ while (_) {
 let repeatedInput = '';
 
 /* repeat the user input `repetitions` number of times */
-for (_; _; _) {
-  repeatedInput = _;
+for (let i = 0; i < repetitions; i++) {
+  // repeatedInput = userInput.repeat(repetitions); 
+  repeatedInput += userInput
 }
+
 
 const finalMessage = `"${userInput}" -> "${repeatedInput}"`;
 alert(finalMessage);

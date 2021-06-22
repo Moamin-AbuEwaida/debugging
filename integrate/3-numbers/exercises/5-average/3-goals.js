@@ -21,6 +21,20 @@ while (true) {
   }
 
   /* -- BEGIN: update sum and inputCount if input is a number, exit if it is "done" -- */
+
+  else if (userInput.toLowerCase()=== 'done'){
+    break;
+  }
+
+  let inputNumber = Number(userInput);
+  if (Number.isNaN(inputNumber)){
+    alert('"' + userInput + '" is not a number, it has been ignored');
+  continue;
+  }
+  else {
+    sum = sum + inputNumber;
+    inputCount = inputCount + 1;
+  }
   /* -- END -- */
 }
 

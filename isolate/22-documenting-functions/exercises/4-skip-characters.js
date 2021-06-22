@@ -2,7 +2,11 @@
 console.log('-- begin --');
 
 /**
- *
+ * The program skipping the characters of a string if this character index modulo equals zero.
+ * @param {String} text, the word we going to repeat
+ * @param {Number} toSkip, the number to identify the charcter to skip
+ * @return {String} text, the same string is case toSkip < 1
+ * @return {Sting} skipified , the new string after skipping some characters 
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {
@@ -11,10 +15,12 @@ const skipCharacters = (text = '', toSkip = 1) => {
 
   let skipified = '';
   for (let i = 0; i < text.length; i++) {
-    if (i % toSkip !== 0) {
+    if (i % toSkip !== 0) {                 // (% modulo) , the remaining of the dividing operation
       const character = text[i];
       skipified += character;
-    }
+  
+    } 
+  
   }
   return skipified;
 };

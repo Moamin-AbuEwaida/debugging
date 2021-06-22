@@ -2,9 +2,9 @@
 console.log('-- begin --');
 
 /**
- * _
- * @_ {_} _ - _
- * @_ {_} _ - _
+ * The program is checking a string if it is a palindrome or not
+ * @param {String} toCheck - this is the string we need to check it
+ * @return {boolean} _ - the result of comparing the string of "toCheck" and the string "reversed" 
  */
 const isPalindrome = (toCheck = '') => {
   let reversed = '';

@@ -2,10 +2,10 @@
 console.log('-- begin --');
 
 /**
- * _
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _ - _
+ * The program is checking the length of the string we enters according to the number we enter at the 2nd parameter
+ * @param {String} text - the string we want to check the length of (default value)
+ * @param {Number} cutoff - the number that decides if string is short or long
+ * @returns {String} _ - the final result, long or short
  */
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {
